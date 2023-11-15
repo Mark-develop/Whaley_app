@@ -1,0 +1,107 @@
+*{
+    /* overflow: hidden; */
+}
+
+/* ---------------- UI KIT ----------------------*/
+.default_form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.default_form > .close-icon{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.default_form > input{
+    padding: 10px 10px;
+    border: solid 1px #669bbc;
+    margin-bottom: 15px;
+}
+
+.default_form > button{
+    transition: all 0.1s ease-in;
+}
+
+.default_form > button:hover{
+    font-weight: 500;
+}
+
+
+.btn{
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+/* -------------------------------------------------- WELCOME PAGE ------------------------------- */
+
+.Welcome_page{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+}
+
+.WP_baner{
+    background-image: url(../public/img/WP_baner.jpg);
+    background-size: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+}
+
+.WP_account{
+    padding: 52px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.login_block{
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popup{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.popup.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.popup_content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 50vw;
+}
